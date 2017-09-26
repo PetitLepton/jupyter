@@ -1,0 +1,117 @@
+/*
+Placeholder for custom user CSS
+mainly to be overridden in profile/static/custom/custom.css
+This will always be an empty file in IPython
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+
+/* Color of the background behind the cells*/
+/*#notebook{
+  background-color: #6f737b;
+}*/
+
+/* Layout */
+.CodeMirror-lines {
+    padding-left: 0.6em;
+}
+
+/* Fonts */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+/* Change code font */
+.CodeMirror,
+.prompt,
+code,
+pre {
+    font-family: 'Roboto Mono', monospace;
+    font-size : 0.85em;
+    line-height: 150%;
+    /* This is for ligatures to be take into
+    account in Chrome. */
+    text-rendering: optimizeLegibility;
+}
+
+div.text_cell_render h1,
+div.text_cell_render h2,
+div.text_cell_render h3,
+div.text_cell_render h4 {
+    font-family: 'Roboto Condensed'
+}
+
+div.text_cell_render h1 {
+    font-size: 3.157em;
+    text-transform: uppercase;
+}
+div.text_cell_render h2 {
+    font-size: 2.369em;
+}
+div.text_cell_render h3 {
+    font-size: 1.777em;
+}
+div.text_cell_render h4 {
+    font-size: 1.333em;
+}
+
+.cm-s-ipython span.cm-operator,
+.cm-s-ipython span.cm-builtin,
+.cm-s-ipython span.cm-variable,
+.cm-s-ipython span.cm-comment,
+.cm-s-ipython span.cm-string,
+.cm-s-ipython span.cm-number,
+.cm-s-ipython span.cm-def,
+.cm-s-ipython span.cm-keyword {
+    font-weight: 400;
+    /* font-size: 1.125em; */
+}
+
+/* Colors */
+
+#notebook-container{
+    box-shadow: 0px 0px 0px 0px;
+}
+
+div.input_area {
+    background-color: #f5f5f5;
+    border: none;
+}
+
+div.input_prompt,
+div.output_prompt {
+    color: #000000;
+}
+
+.CodeMirror-gutters {
+    background-color: #fff;
+    border-color: #fff;
+}
+
+.cm-s-ipython span.cm-comment {
+  /*font-style: normal;
+  /* color: #e690bd; */
+  color: #000000;
+  opacity: 0.5;
+}
+.cm-s-ipython span.cm-builtin,
+.cm-s-ipython span.cm-def  {
+  color: #477ca8;
+}
+.cm-s-ipython span.cm-string {
+  color: #cb3335;
+}
+.cm-s-ipython span.cm-keyword{
+  color:#df8121;
+}
+.cm-s-ipython span.cm-operator{
+  color: #915997;
+}
+.cm-s-ipython span.cm-number{
+  color: #59a257;
+}
