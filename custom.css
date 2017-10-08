@@ -4,14 +4,7 @@ mainly to be overridden in profile/static/custom/custom.css
 This will always be an empty file in IPython
 */
 
-@import url('https://fonts.googleapis.com/css?family=Roboto');
-@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
-@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
-
-/* Color of the background behind the cells*/
-/*#notebook{
-  background-color: #6f737b;
-}*/
+@import url('https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed|Roboto+Mono|Roboto+Slab');
 
 /* Layout */
 .CodeMirror-lines {
@@ -20,13 +13,20 @@ This will always be an empty file in IPython
 
 /* Fonts */
 
+/* Font of the whole notebook */
 body {
-    font-family: 'Roboto', sans-serif;
-    font-size: 1em;
-    line-height: 1.5em;
+  font-family: 'Roboto Mono', sans-serif;
 }
 
-/* Change code font */
+/* Text font */
+p {
+    font-family: 'Roboto Slab', sans-serif;
+    font-size: 1em;
+    line-height: 150%;
+    max-width: 40em;
+}
+
+/* Code font */
 .CodeMirror,
 .prompt,
 code,
@@ -43,12 +43,12 @@ div.text_cell_render h1,
 div.text_cell_render h2,
 div.text_cell_render h3,
 div.text_cell_render h4 {
-    font-family: 'Roboto Condensed'
+    font-family: 'Roboto Condensed';
+    text-transform: uppercase;
 }
 
 div.text_cell_render h1 {
     font-size: 3.157em;
-    text-transform: uppercase;
 }
 div.text_cell_render h2 {
     font-size: 2.369em;
