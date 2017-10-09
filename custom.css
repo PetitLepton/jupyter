@@ -19,7 +19,7 @@ body {
 }
 
 /* Text font */
-p {
+p, ul {
     font-family: 'Roboto Slab', sans-serif;
     font-size: 1em;
     line-height: 150%;
