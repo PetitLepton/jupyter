@@ -4,7 +4,8 @@ mainly to be overridden in profile/static/custom/custom.css
 This will always be an empty file in IPython
 */
 
-@import url('https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed|Roboto+Mono|Roboto+Slab');
+/* @import url('https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed|Roboto+Mono|Roboto+Slab:300,400'); */
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono|IBM+Plex+Sans|IBM+Plex+Sans+Condensed|IBM+Plex+Serif:400,400i');
 
 /* Layout */
 .CodeMirror-lines {
@@ -15,14 +16,17 @@ This will always be an empty file in IPython
 
 /* Font of the whole notebook */
 body {
-  font-family: 'Roboto Mono', sans-serif;
+  font-family: 'IBM Plex Sans', 'Roboto Mono', sans-serif;
+  font-size: 12px;
 }
 
 /* Text font */
 div.text_cell_render p,
-div.text_cell_render ul {
-    font-family: 'Roboto Slab', sans-serif;
-    font-size: 1em;
+div.text_cell_render ul,
+.output_markdown {
+    font-family: 'IBM Plex Serif', 'Roboto Slab', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
     line-height: 150%;
     max-width: 40em;
 }
@@ -31,7 +35,7 @@ div.text_cell_render h1,
 div.text_cell_render h2,
 div.text_cell_render h3,
 div.text_cell_render h4 {
-    font-family: 'Roboto Condensed';
+    font-family: 'IBM Plex Sans Condensed','Roboto Condensed';
     text-transform: uppercase;
 }
 
@@ -45,7 +49,7 @@ div.text_cell_render h4 { font-size: 1.333em; }
 .prompt,
 code,
 pre {
-    font-family: 'Roboto Mono', monospace;
+    font-family: 'IBM Plex Mono', 'Roboto Mono', monospace;
     font-size : 0.85em;
     line-height: 150%;
     /* This is for ligatures to be take into
